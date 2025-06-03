@@ -13,11 +13,13 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "usesIcloudStorage": false
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
+        "permissions": ["INTERNET"],
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
@@ -26,4 +28,5 @@
       "favicon": "./assets/favicon.png"
     }
   }
+  
 }
