@@ -82,7 +82,7 @@ export default function SensorDashboard() {
       <StatusBar barStyle="dark-content" />
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.headerContainer}>
-          <Text style={styles.header}>Monitoreo de Sensores</Text>
+          <Text style={styles.header}>Monitreo de Sensores</Text>
           <Text style={styles.subHeader}>Datos en tiempo real</Text>
         </View>
 

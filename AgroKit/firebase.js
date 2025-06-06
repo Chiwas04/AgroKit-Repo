@@ -11,7 +11,16 @@ const firebaseConfig = {
   appId: "1:1059070535464:web:6a5989e95d6d4c296dd21d"
 };
 
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
+// Inicialización con manejo de errores
+let app;
+let database;
+
+try {
+  app = initializeApp(firebaseConfig);
+  database = getDatabase(app);
+  console.log("Firebase inicializado correctamente");
+} catch (error) {
+  console.error("Error inicializando Firebase:", error);
+}
 
 export { database, ref, onValue };
